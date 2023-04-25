@@ -1,14 +1,32 @@
-class unary{
+import java.util.*;
+
+class OddSum{
+
 	public static void main(String[]args){
 
-		int x = 10;
-		int y = 20;
+	Scanner sc = new Scanner(System.in);
 
-		int ans = ++x + y++ +x++;
+	int sum=0;
 
-		System.out.println(x);
-		System.out.println(y);
-		System.out.println(ans);
+	int number = sc.nextInt();
+
+	int arr[] = new int[number];
+
+	for(int i=0; i<arr.length; i++){
+		arr[i] = sc.nextInt();
+	}
+
+	for(int i=0; i<arr.length; i++){
+		if(arr[i]%2!=0){
+			System.out.println(arr[i]);
+
+		
+			sum = sum + arr[i];
+		}
+	}
+			System.out.println("sum of odd elements are = "+ sum);	
+	
+		
+	
 	}
 }
-
