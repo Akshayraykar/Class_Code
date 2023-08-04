@@ -1,22 +1,10 @@
-class ifelse{
+class Demo{
+
 	public static void main(String[]args){
 
-		int x = 10;
-		int y = 20;
+	int arr2[][] = {{10,20,30},{40,50},{60}};
 
-		if(x>y){
-			System.out.println(x+" is smaller ");
+	System.out.println(arr2.length);
 
-		}
-
-		else if(x<y){
-
-			System.out.println(y+ " is greater");
-
-		}
-
-		else{
-			System.out.println("both are equal");
-		}
 	}
 }

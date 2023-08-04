@@ -1,11 +1,17 @@
-class demo{
+class NullPointerDemo{
+
 	public static void main(String[]args){
 
-		int i = 1;
+	int arr1[][] = { {}, {}, {} };
 
-		while(i<=5){
-			System.out.println("Hello");
-			i++;
-		}
+	int arr2[][] = new int[2][];
+
+	System.out.println(arr1.length);
+
+	System.out.println(arr1[0].length);
+
+	System.out.println(arr2.length);
+
+	System.out.println(arr2[0].length);
 	}
 }

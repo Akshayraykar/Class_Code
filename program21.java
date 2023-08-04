@@ -1,18 +1,16 @@
-class temperature{
+class Demo{
+
 	public static void main(String[]args){
 
-		float temp =100;
+		int arr1[][] = {{10,20,30},{40,50},{60}};
 
-		if(temp>98.6){
-			System.out.println("temp is high");
+		for(int[] x: arr1){
+
+			for(int y : x){
+
+				System.out.print(y +" ");
+			}
+			System.out.println();
 		}
-
-		else if(temp<98.0){
-			System.out.println("temp is low");
-		}
-
-		else(temp<=98.0 && temp<=98.6){
-			System.out.println("Temp is Normal");
 	}
-}
 }

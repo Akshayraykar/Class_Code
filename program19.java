@@ -1,23 +1,16 @@
-class demo{
+class Demo{
 
 	public static void main(String[]args){
 
-		int x = 10;
-		int y = 10;
+		int arr2[][] = {{1,2,3},{4,5},{6}};
 
-		if(x>y){
+		for(int i=0; i<3; i++){
 
-			System.out.println(x+ "is greater");
-		}
+			for(int j=0; j<3; j++){
 
-		else if(x<y){
-
-			System.out.println(y+ "is greater");
-
-		}
-
-		else{
-			System.out.println(y+ "both are equal");
+			 System.out.print(arr2[i][j]  +" ");
+			}
+			System.out.println();
 		}
 	}
 }

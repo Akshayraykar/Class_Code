@@ -1,38 +1,17 @@
-class Demo{
+class JaggedArray{
 
 	public static void main(String[]args){
-		int x = 5;
-	        int y = 7;
 
+		int arr[][] = {{10,20,30},{40,50},{60}};
 
-		if(x<y){
-			System.out.println(y+" is graeter");
+		for (int i=0; i<arr.length; i++){
 
+			for(int j=0; j<arr[i].length; j++){
 
-		}
-
-		else{
-			System.out.println("none");
-		}
-
-
-
+				System.out.print(arr[i][j] +" ");
+			}
+			System.out.println();
 
 		}
-}
-
-
-
-
-
-
-
-
-
-
-
-		
-
-
-
+	}}
 
