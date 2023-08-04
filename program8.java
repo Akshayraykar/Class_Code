@@ -1,23 +1,10 @@
-import java.util.*;
+class bitwise{
+	public static void main(String[]args){
 
-class USER{
+		int x = 8;
+		int y = 10;
 
-	public static void main(string[]args){
-
-		int x;
-		Scanner sc = new Scanner(System.in);
-
-	
-		int arr[] = new int[5];
-
-		System.out.println("Enter elements in array");
-
-		for(int i=0; i<5; i++)
-		arr[i]=sc.nextInt();
-	}
-
-	for(int i=0; i<x; i++){
-		System.out.println(arr[i]);
+		System.out.println(x<<2);
+		System.out.println(x>>2);
 	}
 }
-

@@ -1,9 +1,21 @@
-// second method in  Array to fill 
-class RCB{
+class parent{
+	parent(){
+
+		System.out.println("In parent constructor");
+	}	
+
+}
+
+class child extends parent{
+	child(){
+	super();
+	System.out.println("In child constructor");
+}
+}
+
+class client{
 	public static void main(String[]args){
-
-		int arr[] = {10,20,30,40,50};
-
-		System.out.println(arr[3]);
+	child obj = new child();
+	 
 	}
 }

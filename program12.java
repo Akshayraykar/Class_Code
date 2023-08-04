@@ -1,27 +1,10 @@
-import java.util.*;
-
-class Demo{
+class ternary{
 	public static void main(String[]args){
-		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Enter array:");
-		int size = sc.nextInt();
-		
-		int arr[] = new int[size];
+		int x = 10;
+		int y = 20;
 
-		// input
-		
-		for(int i=0; i<size; i++){
+		System.out.printl((x>y)? x:y);
 
-			arr[i] = sc.nextInt();
-		}
-
-		// output
-		System.out.println("Enter numbers are:");
-
-		for(int i=0; i<size; i++){
-
-		System.out.println(arr[i]);
-		}
 	}
 }

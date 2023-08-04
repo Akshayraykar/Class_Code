@@ -1,11 +1,16 @@
-class LOOP{
+class unary{
 	public static void main(String[]args){
+		int X;
+		int Y;
+		int ans1 = ++X + X++;
 
-		int arr[] = {100,200,300,400,500};
+		int ans2 = --Y + Y--;
 
-		for(int i=0; i<5; i++){
 
-			System.out.println(arr[i]);
-		}
+		System.out.println(ans1);
+		System.out.println(an2);
+		
+		System.out.prinln(X);
+		System.out.println(Y);
 	}
 }

@@ -1,9 +1,22 @@
-// error both creation & intilization are not allowed in array
-class RCB{
-	public static void main(string[]args){
+// unary operator
 
-		int arr[] = new int[4]{10,20,30,40};
 
-		System.out.println(arr[2]);
+class unary{
+
+	public static void main(String[]args){
+
+		int x = 5;
+ 		int y = 7;
+
+	        System.out.println(++x);
+		System.out.println(++y);
+
+
+		System.out.println(--x);
+		System.out.println(--y);
+
+		System.out.println(x);
+		System.out.println(y);
+
 	}
 }

@@ -1,13 +1,17 @@
-class unary{
-	public static void main(String[]args){
-		int x = 5;
-		int y = 7;
+class Demo{
 
-		System.out.println(x++);
-		System.out.println(y++);
+      	 int x  = 10;
+	public static void main(String[]args){
+
+	int y= 20;
+		Demo obj =new Demo();
+		obj.x();
+	       
+
+
 
 		System.out.println(x);
 		System.out.println(y);
-
 	}
 }
+

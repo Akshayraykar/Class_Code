@@ -1,14 +1,18 @@
 class unary{
+
 	public static void main(String[]args){
+		int x = 8;
 
-		int x = 10;
-		int y = 20;
+		int y = 5;
 
-		int ans = ++x + y++ +x++;
 
+		System.out.println(++x + x++);
+
+		System.out.println(--y + y--);
+		
 		System.out.println(x);
+
 		System.out.println(y);
-		System.out.println(ans);
 	}
 }
 
