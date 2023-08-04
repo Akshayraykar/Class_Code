@@ -1,24 +1,25 @@
-import java.util.*;
+class IntergerDemo{
 
-class VowelDemo{
 	public static void main(String[]args){
 
-		System.out.println("Enter 7 characterstics: ");
+		int arr[] = new int[]{1,2,5,4,6,7,8};
+		
+		int evencount = 0, Oddcount = 0;
+		for(int i=0; i<arr.length; i++){
+			
+		
+			if(arr[i]%2 == 0){
 
-		Scanner sc = new Scanner(System.in);
-
-		char inputArr[] = sc.next().toCharArray();
-
-		System.out.println("Vowels in input array: ");
-
-		for(char c : inputArr){
-			if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' || 
-			   c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U'){
-
-				
-			   }
-	
-		System.out.println(c);
+				evencount++;
+			}
+			else{
+				Oddcount++;
+			}
 		}
+		System.out.println("Number of even elements = "+evencount);
+
+		System.out.println("number of odd elements = "+Oddcount);
 	}
 }
+
+

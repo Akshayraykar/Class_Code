@@ -1,26 +1,36 @@
-class ArrayDemo{
+import java.util.*;
+
+class Demo{
 
 	public static void main(String[]args){
+		
+		System.out.println("Enter Array size:");
 
+		Scanner sc = new Scanner(System.in);
 
-		int arr1[] = {10,20,30,40,50};
+		int size = sc.nextInt();
+		int arr[] = new int[size];
 
-		char arr2[] = {'A','B'};
+		System.out.println("ENter Array elements:");
+		for(int i=0; i<arr.length; i++){
+			arr[i] = sc.nextInt();
+		}
+		int Ecount=0, Ocount=0;
+		for(int i =0; i<arr.length; i++){
 
-		float arr3[] = {10.5f, 20.3f};
+			if(arr[i]%2==0){
 
-		boolean arr4[] = {true , false ,true};
+				Ecount++;
+			}
 
-		System.out.println(arr1[0]);    //10
-		System.out.println(arr1[4]);    //50
+			else{
+				Ocount++;
+			}
+		}
+		System.out.println("Numbers of EvenCount are = "+Ecount);
 
-		System.out.println(arr2[0]);    //A
-		System.out.println(arr2[1]);    //B
-						
-		System.out.println(arr3[1]);   //20
-
-		System.out.println(arr4[3]);   //true
-						
-
+		System.out.println("Numbers of Oddcount are = "+Ocount);
 	}
 }
+
+

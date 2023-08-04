@@ -1,23 +1,30 @@
-import java.util.*;
+ import java.util.*;
 
-class ArrayDemo{
+class MinDemo{
+
 	public static void main(String[]args){
 
-		int sum = 0;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Array");
-                
-		int arr[] = new int[5]; 
-		for(int i =0; i<5; i++){
-			arr[i] = sc.nextInt();
-		
-}
-		for(int i=0; i<5; i++){
-	
-			sum = sum + arr[i];
-		}
-			System.out.println("Array sum = "+sum);
-		
 
-}
+		System.out.println("Enter array size :");
+		int size = sc.nextInt();
+		
+		int arr[] = new int[size];
+
+		System.out.println("Enter Array elements : ");
+
+		for(int i=0; i<arr.length; i++){
+
+		arr[i] = sc.nextInt();
+		}
+
+		int min = arr[0];
+		for(int i=0; i<arr.length; i++){
+
+			if(arr[i]<min){
+				min = arr[i];
+			}
+		}
+		System.out.println("minimum element in array = "+min);
+	}
 }

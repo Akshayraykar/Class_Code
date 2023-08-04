@@ -1,9 +1,43 @@
-// error both creation & intilization are not allowed in array
-class RCB{
-	public static void main(string[]args){
+import java.io.*;
+class EvenOddCount{
 
-		int arr[] = new int[4]{10,20,30,40};
+	public static void main(String[]args)throws IOException{
 
-		System.out.println(arr[2]);
+		BufferedReader br = new BufferedReader(new InputStreamReader(Sytsem.in));
+
+		System.out.println("Enter Size of Array:");
+
+		int size = Interger.parseInt(br.readLine());
+
+		int arr[] = new int[size];
+
+		System.out.println("Enter Array Elements:");
+
+		for(int i=0; i<arr.length; i++){
+
+			arr[i] = Interger.parseInt(br.readLine());
+
+		}
+  		int Ecount=0;
+		int Ocount = 0;
+
+
+		for(int i=0; i<arr.length; i++){
+
+		if (int arr[i]%2 == 0){
+
+			Ecount++;
+
+		
+		}
+		   else{
+			Ocount++;
+		}
+		}
+	
+		System.out.println("number of Even elements in array: "+Ecount);
+
+		System.out.println("number Of Odd Elements in array: "+Ocount);
 	}
 }
+	

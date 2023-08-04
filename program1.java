@@ -1,14 +1,30 @@
-/*class ArrayDemo{
+import java.util.*;
+class Demo{
+
 	public static void main(String[]args){
+	int sum=0;
+	
+	Scanner sc = new Scanner(System.in);
 
-		int arr1[] = new int[];    //Array dimension not defined compile time error
+	System.out.println("enter Array size: ");
+  	int size = sc.nextInt();
+	int arr[] = new int[size];
+    
+	System.out.println("Enter elements in array: ");
+
+	for(int i=0; i<arr.length;i++){
+
+		arr[i] = sc.nextInt();
 	}
-	}*/
 
-class ArrayDemo{
-	public static void main(String[]args){
-
-		int arr1[] = new int[5];
-
+	for(int i=0; i<arr.length; i++){
+		
+	 sum = sum + arr[i];
 	}
+	
+	System.out.println("Sum of array = "+sum);
 }
+}
+
+
+

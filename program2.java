@@ -1,13 +1,33 @@
-class RCB{
-	public static void main(String[]args){
-//for taking input from user
- 	int arr[] = new int[4];
+import java.io.*;
+class SumofArray{
 
-		arr[0] = 10;
-		arr[1] = 10;
-		arr[2] = 10;
-		arr[3] = 10;
+	public static void main(String[]args)throws IOException {
 
-		System.out.println(arr[1]);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+
+		System.out.println("Enter Size of array:");
+		
+		int size = Integer.parseInt(br.readLine());
+
+		int arr[] = new int[size];
+
+		System.out.println("Enter Elements in array: ");
+
+		for(int i=0; i<arr.length; i++){
+
+			arr[i] = Integer.parseInt(br.readLine());
+		}
+
+		int sum = 0;
+
+		for(int i=0; i<arr.length; i++){
+
+			sum = sum + arr[i];
+
+		}
+		System.out.println("sum of array = "+sum);
 	}
 }
+
+

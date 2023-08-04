@@ -1,23 +1,34 @@
-import java.util.*;
+import java.io.*;
 
-class USER{
+class SearchDemo{
 
-	public static void main(string[]args){
+	public static void main(String[]args)throws IOException{
 
-		int x;
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+		System.out.println("Enter Size Of array:");
+		int size = Integer.parseInt(br.readLine());
+
+		int arr[] = new int[size];
+
+		System.out.println("Enter Elements In array: ");
+
+		for(int i=0; i<arr.length; i++){
+
+			 arr[i] =Integer.parseInt(br.readLine());
+
+		}
+
+		System.out.println("Enter Element in array Search:");
+		int search = Integer.parseInt(br.readLine());
+		for(int i =0; i<arr.length; i++){
+
+			if(arr[i] == search){
+		
 	
-		int arr[] = new int[5];
-
-		System.out.println("Enter elements in array");
-
-		for(int i=0; i<5; i++)
-		arr[i]=sc.nextInt();
-	}
-
-	for(int i=0; i<x; i++){
-		System.out.println(arr[i]);
+		 System.out.println("Element found at index: "+i);
+		}
+		}
 	}
 }
 
